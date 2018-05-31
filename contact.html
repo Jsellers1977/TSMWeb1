@@ -102,25 +102,26 @@
           <div class="ff card-panel z-depth-5">
             <h4>Contact Us</h4>
             <div id="form-messages"></div>
-       <form class=perfect>
-   <h2>Send us a message</h2>
-   <label>
-      <span>Message:</span>
-      <textarea name=message placeholder="Enter your message"></textarea>
-   </label>
-   <label>
-      <span>Name:</span>
-      <input name=name placeholder="Enter your name">
-   </label>
-   <label>
-      <span>Email:</span>
-      <input name=email type=email placeholder="Enter your email">
-   </label>
-   <p>
-      <span>Powered by <a href=http://centerkey.com/php>PERFECT</a></span>
-      <button type=submit>Send</button>
-   </p>
-</form>
+ 
+<form id="ajax-contact" method="GET" action="mailer.php">
+              <div class="input-field">
+                <input type="text" id="name" placeholder="Name" required>
+                <label for="name">Name</label>
+              </div>
+              <div class="input-field">
+                <input type="email" id="email" placeholder="Email" required>
+                <label for="email">Email</label>
+              </div>
+              <div class="input-field">
+                <input type="text" id="phone" placeholder="Phone Number">
+                <label for="phone">Phone</label>
+              </div>
+              <div class="input-field">
+                <textarea class="materialize-textarea" id="message" placeholder="Message" required></textarea>
+                <label for="message">Message</label>
+              </div>
+              <input type="submit" value="Submit" class="btn orange darken-3 waves-effect waves-effect-light">
+            </form>
 
 
           </div>
@@ -282,8 +283,6 @@
     $(document).ready(function () {
 
 
-
-   $('form.perfect').attr({ method: 'get', action: 'perfect.php' });
 
 
       // Init Sidenav
