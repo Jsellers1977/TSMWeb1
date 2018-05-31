@@ -9,7 +9,7 @@
 //////////////////////////////////////////////////////////
 
 // Configuration settings
-$sendFrom =    "Form Feedback <feedback@yourdomain.com>";
+$sendFrom =    "Form Feedback <jsellers21@gmail.com>";
 $sendTo =      "jsellers21@gmail.com";
 $subjectLine = "Feedback Submission";
 $thanksUrl =   "thanks.html";  //confirmation page
