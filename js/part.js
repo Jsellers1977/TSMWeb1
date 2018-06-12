@@ -207,4 +207,6 @@ Particles.prototype.clearCanvas = function() {
 // go go go!
 var particle = new Particles().init();
 
-
+//disabled safari
+var is_safari = (navigator.userAgent.indexOf('Safari') != -1) && (navigator.userAgent.indexOf('Chrome') == -1);
+if (navigator.userAgent.match(/(iPod|iPhone|iPad)/) || is_safari) {
