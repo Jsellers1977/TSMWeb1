@@ -535,10 +535,8 @@
     
       // Init Scrollspy
       $('.scrollspy').scrollSpy();
+    });
     
-    $( window ).bind('mousewheel', function( ev ){ ev.preventDefault(); 
-     var $window = $(window), scrollIncrement = ev.originalEvent.deltaY/5, 
-         scrollPos = $window.scrollTop(), newPos = scrollPos+scrollIncrement; $window.scrollTop( newPos ); } );
 
   </script>
 </body>
