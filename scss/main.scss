@@ -20,11 +20,13 @@ body {
   font-family: "Quattrocento Sans";
 }
 
-.section-parallax {
+.parallax {
   position: fixed;
-
- background-attachment: fixed;
+  background-attachment: fixed;
+  -webkit-transition-property: left;
+    -webkit-transition-duration: 0.5s;
 }
+
 .section-dark-grey {
   height: 300px;
 }
@@ -32,6 +34,7 @@ body {
 .div2 {
   margin-bottom: 40%;
 }
+
 .formbtn {
   background: url(../img/gallery/cloud.jpeg);
   background-size: cover;
@@ -95,10 +98,7 @@ footer {
   opacity: 0;
 }
 
-/* .bg1 {
-  background-color: $primary-color;
-}
- */
+
 .img-content {
   display: flex;
   flex-direction: column;
